@@ -162,7 +162,7 @@ header > #content {
 .features > div > a {
   text-decoration: none;
   color: #fff;
-  padding: 5px 25px;
+  padding: 5px 20px;
   border-radius: 30px;
   border: white solid 1px;
 }
@@ -186,7 +186,27 @@ header > #content {
   margin: 0 30px;
 }
 
+@media screen and (max-width: 558px) {
+    .features > div {
+        width: 98%;
+        flex-direction: column;
+      }
+      .features > div > a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border-radius: 30px;
+        margin: 12px 0;
+        border: white solid 1px;
+      }
+}
+
 @media screen and (max-width: 798px) {
+
+    .features{
+        height: auto;
+    }
+
     .main_features > img {
         display: none;
       }
@@ -195,7 +215,18 @@ header > #content {
       }
 
       .features > div {width: 90%;}
-      
+      .list_left, .list_right {
+          align-items: center !important;
+          justify-content: center;
+      }
+
+      .features > div {
+        width: 90%;
+      }
+
+      .actual__section{
+          height: auto !important;
+      }
 }
 
 .list_left {
